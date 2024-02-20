@@ -14,13 +14,13 @@ import simon from '../../assets/simon.png';
 import tom from '../../assets/tom.png';
 import megan from '../../assets/megan.png';
 import cameron from '../../assets/cameron.png';
+
 const Sidebar = ({ sidebar, category, setCategory }) => {
 	return (
 		<div className={`sidebar ${sidebar ? '' : 'small-sidebar'}`}>
-			{/* CATEGORY SECTION */}
 			<div className='shortcut-links'>
 				<div
-					className={`side-links ${category === 0 ? 'active' : ''}`}
+					className={`side-link ${category === 0 ? 'active' : ''}`}
 					onClick={() => setCategory(0)}
 				>
 					<img
@@ -30,7 +30,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Home</p>
 				</div>
 				<div
-					className={`side-links ${category === 20 ? 'active' : ''}`}
+					className={`side-link ${category === 20 ? 'active' : ''}`}
 					onClick={() => setCategory(20)}
 				>
 					<img
@@ -40,7 +40,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Gaming</p>
 				</div>
 				<div
-					className={`side-links ${category === 2 ? 'active' : ''}`}
+					className={`side-link ${category === 2 ? 'active' : ''}`}
 					onClick={() => setCategory(2)}
 				>
 					<img
@@ -50,7 +50,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Automobiles</p>
 				</div>
 				<div
-					className={`side-links ${category === 17 ? 'active' : ''}`}
+					className={`side-link ${category === 17 ? 'active' : ''}`}
 					onClick={() => setCategory(17)}
 				>
 					<img
@@ -60,7 +60,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Sports</p>
 				</div>
 				<div
-					className={`side-links ${category === 24 ? 'active' : ''}`}
+					className={`side-link ${category === 24 ? 'active' : ''}`}
 					onClick={() => setCategory(24)}
 				>
 					<img
@@ -70,7 +70,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Entertainment</p>
 				</div>
 				<div
-					className={`side-links ${category === 28 ? 'active' : ''}`}
+					className={`side-link ${category === 28 ? 'active' : ''}`}
 					onClick={() => setCategory(28)}
 				>
 					<img
@@ -80,7 +80,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Technology</p>
 				</div>
 				<div
-					className={`side-links ${category === 10 ? 'active' : ''}`}
+					className={`side-link ${category === 10 ? 'active' : ''}`}
 					onClick={() => setCategory(10)}
 				>
 					<img
@@ -90,7 +90,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Music</p>
 				</div>
 				<div
-					className={`side-links ${category === 22 ? 'active' : ''}`}
+					className={`side-link ${category === 22 ? 'active' : ''}`}
 					onClick={() => setCategory(22)}
 				>
 					<img
@@ -100,7 +100,7 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 					<p>Blogs</p>
 				</div>
 				<div
-					className={`side-links ${category === 25 ? 'active' : ''}`}
+					className={`side-link ${category === 25 ? 'active' : ''}`}
 					onClick={() => setCategory(25)}
 				>
 					<img
@@ -111,43 +111,42 @@ const Sidebar = ({ sidebar, category, setCategory }) => {
 				</div>
 				<hr />
 			</div>
-			{/* SUBSCRIBED SIDEBAR SECTION */}
 			<div className='subscribed-list'>
 				<h3>Subscribed</h3>
-				<div className='side-links'>
+				<div className='side-link'>
 					<img
 						src={jack}
 						alt=''
-					/>
+					/>{' '}
 					<p>PewDiePie</p>
 				</div>
-				<div className='side-links'>
+				<div className='side-link'>
 					<img
 						src={simon}
 						alt=''
-					/>
+					/>{' '}
 					<p>MrBeast</p>
 				</div>
-				<div className='side-links'>
+				<div className='side-link'>
 					<img
 						src={tom}
 						alt=''
-					/>
+					/>{' '}
 					<p>Justin Bieber</p>
 				</div>
-				<div className='side-links'>
+				<div className='side-link'>
 					<img
 						src={megan}
 						alt=''
-					/>
-					<p>5-Minutes Craft</p>
+					/>{' '}
+					<p>5 Minute Crafts</p>
 				</div>
-				<div className='side-links'>
+				<div className='side-link'>
 					<img
 						src={cameron}
 						alt=''
-					/>
-					<p>Nas Daily</p>
+					/>{' '}
+					<p>Info Daily</p>
 				</div>
 			</div>
 		</div>
